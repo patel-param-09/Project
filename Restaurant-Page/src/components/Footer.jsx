@@ -3,6 +3,7 @@ import { BsFacebook } from "react-icons/bs";
 import { RiTwitterXFill } from "react-icons/ri";
 import { BsInstagram } from "react-icons/bs";
 import Contact from "./Contact";
+import { FaInstagram, FaWhatsapp, FaGoogle, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -79,12 +80,21 @@ const Footer = () => {
               >
                 +64 958 248 966
               </a>
-              <a
-                className=" hover:text-brightColor transition-all cursor-pointer"
-                href="/"
-              >
-                Social media
+              <a href="/" className="flex gap-3 text-xl mt-2">
+                <span className=" hover:text-brightColor transition-all cursor-pointer">
+                  <FaInstagram />
+                </span>
+                <span className=" hover:text-brightColor transition-all cursor-pointer">
+                  <FaGoogle />
+                </span>
+                <span className=" hover:text-brightColor transition-all cursor-pointer">
+                  <FaWhatsapp />
+                </span>
+                <span className=" hover:text-brightColor transition-all cursor-pointer">
+                  <FaFacebook />
+                </span>
               </a>
+              <span className="mt-5">Opaning Hours : 9:00 AM to 11:00 PM</span>
             </nav>
           </div>
           <div className=" bg-black text-white mt-5 md:mt-0 pl-8 flex flex-col">
